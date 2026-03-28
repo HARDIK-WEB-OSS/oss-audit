@@ -3,8 +3,8 @@
 
 | Field | Details |
 |---|---|
-| **Student Name** | [Your Name] |
-| **Registration Number** | [Your Reg No] |
+| **Student Name** | Hardik Agarwal |
+| **Registration Number** | 24BCE11347 |
 | **Chosen Software** | Linux Kernel |
 | **License** | GNU General Public License v2 (GPL v2) |
 
@@ -45,8 +45,8 @@ No additional installations required for any script.
 ### Step 1 — Clone the repository
 
 ```bash
-git clone https://github.com/[your-username]/oss-audit-[rollnumber].git
-cd oss-audit-[rollnumber]
+git clone https://github.com/HARDIK-WEB-OSS/oss-audit.git
+cd oss-audit-[24BCE11347]
 ```
 
 ### Step 2 — Make all scripts executable

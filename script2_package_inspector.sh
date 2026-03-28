@@ -1,13 +1,3 @@
-#!/bin/bash
-# Script 2: FOSS Package Inspector
-# Author: [Your Name] | Reg No: [Your Reg No]
-# Course: Open Source Software | VIT Bhopal
-# Description: Checks if a package is installed, prints its version
-#              and license, then shows a philosophy note using case.
-
-# ---------------------------------------------------------------
-# PACKAGE LIST — we check these four FOSS packages
-# ---------------------------------------------------------------
 PACKAGES=("git" "python3" "apache2" "vlc")
 
 echo "======================================================="
@@ -15,19 +5,14 @@ echo "         FOSS Package Inspector Report                 "
 echo "======================================================="
 echo ""
 
-# ---------------------------------------------------------------
-# LOOP — check each package using dpkg (Ubuntu/Debian/WSL2)
-# ---------------------------------------------------------------
 for PACKAGE in "${PACKAGES[@]}"; do
 
     echo "-------------------------------------------------------"
     echo "Package: $PACKAGE"
 
-    # Check if the package is installed using dpkg-query
     if dpkg -l "$PACKAGE" &>/dev/null; then
         echo "Status  : INSTALLED"
 
-        # Get version number from dpkg
         VERSION=$(dpkg -l "$PACKAGE" 2>/dev/null | grep "^ii" | awk '{print $3}')
         echo "Version : $VERSION"
 
@@ -36,9 +21,6 @@ for PACKAGE in "${PACKAGES[@]}"; do
         echo "Tip     : Run -> sudo apt install $PACKAGE"
     fi
 
-    # -------------------------------------------------------
-    # CASE STATEMENT — print a philosophy note per package
-    # -------------------------------------------------------
     case $PACKAGE in
         git)
             echo "Note    : Git — Linus Torvalds built it when proprietary"

@@ -1,31 +1,16 @@
-#!/bin/bash
-# Script 1: System Identity Report
-# Author: [Your Name] | Reg No: [Your Reg No]
-# Course: Open Source Software | VIT Bhopal
-# Description: Displays a system welcome screen with OS info,
-#              user details, uptime, and open-source license info.
+STUDENT_NAME="Hardik Agarwal"
+SOFTWARE_CHOICE="Linux Kernel"
 
-# ---------------------------------------------------------------
-# VARIABLES — store student info and system data
-# ---------------------------------------------------------------
-STUDENT_NAME="[Your Name]"          # Replace with your name
-SOFTWARE_CHOICE="Linux Kernel"      # Chosen OSS project
+KERNEL=$(uname -r)
+USER_NAME=$(whoami)
+HOME_DIR=$HOME
+UPTIME=$(uptime -p)
+CURRENT_DATE=$(date '+%A, %d %B %Y %H:%M:%S')
 
-KERNEL=$(uname -r)                          # Current kernel version
-USER_NAME=$(whoami)                         # Logged-in username
-HOME_DIR=$HOME                              # Home directory path
-UPTIME=$(uptime -p)                         # Human-readable uptime
-CURRENT_DATE=$(date '+%A, %d %B %Y %H:%M:%S')  # Current date and time
-
-# Get Linux distro name from /etc/os-release file
 DISTRO=$(grep '^PRETTY_NAME' /etc/os-release | cut -d= -f2 | tr -d '"')
 
-# The Linux Kernel is licensed under GPL v2
 OS_LICENSE="GNU General Public License version 2 (GPL v2)"
 
-# ---------------------------------------------------------------
-# DISPLAY — print formatted system identity report
-# ---------------------------------------------------------------
 echo "======================================================="
 echo "        Open Source Audit — System Identity Report     "
 echo "======================================================="
