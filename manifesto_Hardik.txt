@@ -1,0 +1,32 @@
+=======================================================
+         MY OPEN SOURCE MANIFESTO                      
+=======================================================
+
+Author : Hardik
+Date   : 28 March 2026
+
+-------------------------------------------------------
+
+Every day, I rely on Github — a piece of software built
+not for profit, but for the shared good of anyone who
+needs it. To me, freedom means PEACE. That single word
+captures what the open-source movement is really about:
+the freedom to read the code that shapes your world,
+the freedom to change it when it is broken, and the
+freedom to pass it on without restriction.
+
+The Linux Kernel — the software at the heart of this audit
+— was not created for commercial gain. Linus Torvalds
+shared it because he believed that knowledge grows when
+it is shared, not when it is locked away. I carry that
+belief forward. Given the chance, I would build Nothing
+and release it under an open license — so that someone
+I will never meet can learn from it, improve it, and
+build something greater still.
+
+Open source is not just a licensing model.
+It is an argument about how the world should work.
+
+-------------------------------------------------------
+Signed: Hardik | 28 March 2026
+=======================================================
